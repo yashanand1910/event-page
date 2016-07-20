@@ -1,0 +1,192 @@
+@font-face{
+	font-family: Avenir;
+	src: url(fonts/Avenir.ttc);
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+#cover{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg,black,rgba(0,0,0,0.1));
+	overflow: hidden;
+}
+#header{
+	position: absolute;
+	width: 100%;
+	bottom: 5em;
+}
+#header p:nth-child(1){
+	color: white;
+	font-family: Avenir;
+	font-size: 2.7em;
+	font-weight: lighter;
+	line-height: 1.3em;
+	margin: auto 7%;
+}
+#header p:nth-child(2){
+	color: rgba(255,255,255,0.7);
+	font-size: 1em;
+	font-family: Avenir;
+	font-weight: lighter;
+	margin: auto 7%;
+}
+#mosaic{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.image-base1{
+	display: inline-block;
+	background: rgba(100,100,200,1);
+	height: 31.5%;
+	width: 35.62%;
+	margin: 0.2%;
+}
+.image-base2{
+	display: inline-block;
+	background: rgba(50,50,200,1);
+	height: 31.5%;
+	width: 27.54%;
+	margin: 0.2%;
+}
+.image-base3{
+	display: inline-block;
+	background: rgba(100,100,200,1);
+	height: 31.5%;
+	width: 43.67%;
+	margin: 0.2%;
+}
+#menu-button{
+	position: fixed;
+	margin-top: 1.5em;
+	margin-left: 1.5em;
+	height: 1.5em;
+	width: 2em;
+}
+#menu-button div{
+	margin-bottom: 0.425em;
+	height: 0.25em;
+	width: 2em;
+	background: rgba(200,200,200,0.7);
+	text-shadow: 20px;
+}
+#menu-button:hover > div{
+	background: rgba(200,200,200,1);
+}
+#button{
+	position: absolute;
+	bottom: -5em;
+	height: 2.5em;
+	width: 100%;
+	background: linear-gradient(0deg,rgb(20,20,20),rgba(0,0,0,0.5));
+}
+#triangle{
+	margin: 1.2em auto;
+	height: 0em;
+	width: 0em;
+	border-top: 0.3em solid rgba(255,255,255,0.5);
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+}
+#button:hover{
+	background: linear-gradient(0deg,rgb(20,20,20),rgba(10,10,10,0.5));
+}
+#button:hover > #triangle{
+	border-top-color: white;
+}
+#content{
+	position: absolute;
+	top: 100%;
+	background: rgb(20,20,20);
+	height:96%;
+	width: 100%;
+}
+#footer{
+	position: absolute;
+	bottom: 0;
+	background: linear-gradient(0deg,rgb(20,20,20),rgb(20,20,20));
+	width: 100%;
+	height: 6em;
+	overflow: hidden;
+}
+#footer a div:nth-child(1){
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	height: 0em;
+	width: 0em;
+	border-bottom: 12em solid #242a67;
+	border-left: 13em solid #242a67;
+	border-right: 12.2em solid transparent;
+}
+#footer a div:nth-child(1):hover{
+	border-bottom-color: #2b337c;
+	border-left-color: #2b337c;
+}
+#footer a div:nth-child(1):hover > #blog-link{
+	color:white;
+}
+#csi-typeface{
+	display: inline-block;
+	position: absolute;
+	margin: 0.5em 1.5em 0.5em 59em;
+	right: 1em;
+	height: 72%;
+}
+#facebook-logo{
+	display: inline-block;
+	position: absolute;
+	left: 27em;
+	top: 1.9em;
+	height: 35%;
+	opacity: 0.7;
+}
+#twitter-logo{
+	display: inline-block;
+	position: absolute;
+	left: 31em;
+	top: 1.9em;
+	height: 35%;
+	opacity: 0.7;
+}
+#github-logo{
+	display: inline-block;
+	position: absolute;
+	left: 35em;
+	top: 1.9em;
+	height: 35%;
+	opacity: 0.7;
+}
+#facebook-logo:hover{
+	opacity: 1;
+}
+#twitter-logo:hover{
+	opacity: 1;
+}
+#github-logo:hover{
+	opacity: 1;
+}
+#footer div:nth-child(2){
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	height: 0em;
+	width: 0em;
+	border-top: 12em solid rgb(20,20,20);
+	border-left: 12.2em solid transparent;
+	border-right: 13em solid rgb(20,20,20);
+}
+#blog-link{
+	position: absolute;
+	top: 4em;
+	left: -5em;
+	color: rgba(255,255,255,0.6);
+	font-size: 2em;
+	font-family: Avenir;
+	font-weight: lighter;
+}
